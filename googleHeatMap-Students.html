@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Heatmaps</title>
+    <title>Lighthouse Heatmaps</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
       <style>
@@ -1684,13 +1684,13 @@ var wh = [
 async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     
-    const myLatlng = { lat: 38.45, lng: -98.65  };
+    const myLatlng = { lat: 43, lng: -98.65  };
 
 
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 5,
+      zoom: 4.3,
       center: myLatlng,
-      mapId: "YOUR_MAP_ID",
+      mapId: "3d0983788f10bc36",
     });
 
   heatmap = new google.maps.visualization.HeatmapLayer({
